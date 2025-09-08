@@ -450,3 +450,16 @@ function renderPost(post) {
 
     return el;
 }
+
+
+
+
+//-----------No one inspect our code-----------//
+  document.addEventListener("contextmenu", e => e.preventDefault()); // disable right click
+  document.addEventListener("keydown", e => {
+    if (e.key === "F12" || (e.ctrlKey && e.shiftKey && ["I","J","C"].includes(e.key))) {
+      e.preventDefault();
+    }
+  });
+
+
